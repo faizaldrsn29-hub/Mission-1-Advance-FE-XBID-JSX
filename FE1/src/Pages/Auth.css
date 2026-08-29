@@ -1,0 +1,129 @@
+.auth-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 104px 20px 40px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), url('../assets/banner.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.auth-page form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(100%, 490px);
+  padding: 24px 20px 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(23, 32, 51, 0.18);
+}
+
+.auth-page .logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100px;
+  height: 60px;
+  margin: 0 auto 18px;
+  object-fit: contain;
+}
+
+.auth-page .header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.auth-page h1 {
+  margin: 0 0 8px;
+  color: #172033;
+  font-size: 32px;
+}
+
+.auth-page .header p,
+.auth-page .or {
+  color: #566176;
+}
+
+.auth-page .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.auth-page label {
+  color: #28344a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-page input {
+  width: 100%;
+  padding: 12px 14px;
+  color: #172033;
+  background: #fff;
+  border: 1px solid #cbd3df;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.auth-page input:focus {
+  border-color: #0875d1;
+  box-shadow: 0 0 0 3px rgba(8, 117, 209, 0.14);
+}
+
+.auth-page button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  color: #fff;
+  font-weight: 700;
+  background: #0875d1;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-page button:hover {
+  background: #075da7;
+}
+
+.auth-page a {
+  color: #075da7;
+  text-decoration: none;
+}
+
+.auth-page .or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img .logo{
+  height: 60px;
+}
+
+@media (max-width: 600px) {
+  .auth-page {
+    min-height: 100vh;
+    padding: 96px 14px 28px;
+    background-position: center;
+  }
+
+  .auth-page form {
+    padding: 20px 16px 16px;
+  }
+}
+
